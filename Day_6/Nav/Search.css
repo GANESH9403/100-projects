@@ -1,0 +1,5 @@
+#search:focus{
+outline: none;
+border: none;
+user-select: none;
+}
