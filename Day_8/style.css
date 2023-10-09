@@ -1,0 +1,15 @@
+.glow:hover{
+    
+    box-shadow:#ffc107 0px 3px 8px;
+    
+}
+.text-box{
+    transition: .2s;
+}
+.text-box:focus{
+    box-shadow: none;
+    border-left:5px solid #ffc107;;
+}
+.button:hover{
+    color:white
+}

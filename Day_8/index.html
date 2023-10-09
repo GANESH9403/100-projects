@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar bg-light border-bottom shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/Logo.svg" alt="">
+            </a>
+                
+            <div>
+                    <a class="btn btn-secondary bg-none mx-lg-3 text-bg-light opacity-25 border-0 ">How its works?</a>
+                    <a class="btn btn-secondary bg-none mx-lg-3 text-bg-light opacity-25 border-0 ">Features</a>
+                    <a class="btn btn-secondary bg-none mx-lg-3 text-bg-light opacity-25 border-0 ">About us</a>
+                    <button type="button" class="btn button mx-lg-3 btn-outline-warning rounded-0"
+                        data-bs-toggle="modal" data-bs-target="#loginPopup">
+                        Login
+                    </button>
+                    <button type="button" class="btn button mx-lg-3 btn-outline-warning rounded-0"
+                        data-bs-toggle="modal" data-bs-target="#signupPopup">
+                        Signup
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="loginPopup" tabindex="-1" aria-labelledby="loginPopupLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="loginPopupLabel">Login</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- login body -->
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <img src="images/Logo.svg" alt="">
+                                        <p class="mt-2 h6 opacity-75 text-secondary">Welcome back!<br>login/signup
+                                            in your account</p>
+                                        <form  autocomplete="off"="#" method="post">
+                                            <div class="form-group d-flex flex-column flex-start">
+                                                <label class="form-label text-start ms-1" for="email">E-mail</label>
+                                                <input id="email" class="form-control text-box text-warning rounded-1"
+                                                    type="email" placeholder="Email">
+                                                <label class="form-label text-start ms-1 my-1"
+                                                    for="login-pass">Password</label>
+                                                <input class="form-control text-box text-warning rounded-1"
+                                                    type="password" id="login-pass" placeholder="Password">
+                                            </div>
+
+                                            <div class="my-4 form-group d-flex w-100 justify-content-between">
+                                                <div class="form-check-inline">
+                                                    <input id="check" class="form-check-input" type="checkbox">
+                                                    <label for="check">Remember me</label>
+                                                </div>
+                                                <a class="text-decoration-none text-secondary" href="#">Forgot
+                                                    Password?</a>
+                                            </div>
+                                            <div class="button-group d-flex flex-start gap-4 my-4">
+                                                <button id="login" type="submit"
+                                                    class="btn button btn-outline-warning  glow rounded-0">Login</button>
+                                                    
+
+                                            </div>
+                                        </form>
+                                        <div class="d-flex flex-start w-100 mb-3 gap-4">
+                                            <p class="text-secondary">or login with</p><a
+                                                class="text-decoration-none text-warning" href="#">Facebook</a><a
+                                                class="text-decoration-none text-warning" href="#">Google</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="signupPopup" tabindex="-1" aria-labelledby="signupPopupLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="signupPopupLabel">SignUp</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- login body -->
+                                <div class="row">
+                                    <div class="col-12 text-center">
+                                        <img src="images/Logo.svg" alt="">
+                                        <p class="mt-2 h6 opacity-75 text-secondary">Welcome back!<br>login/signup
+                                            in your account</p>
+                                        <form autocomplete="off" action="#" method="post">
+                                            <div class="form-group d-flex flex-column">
+                                                <label class="text-start ms-1" for="name">Name</label>
+                                                <input type="text" id="name" name="name"
+                                                    class="form-control text-box text-warning rounded-1"
+                                                    placeholder="Name">
+                                                <label class="text-start ms-1" for="signup-email">E-mail</label>
+                                                <input id="signup-email" name="signup-email"
+                                                    class="form-control text-box text-warning rounded-1" type="email"
+                                                    placeholder="Email">
+                                                    <label class="text-start ms-1" for="signup-password">Password</label>
+                                                <input id="signup-password" name="signup-password"
+                                                    class="form-control text-box text-warning rounded-1" type="password"
+                                                    placeholder="Password">
+                                                    <label class="text-start ms-1" for="signup-confirm-password">Confirm Password</label>
+                                                <input id="signup-confirm-password" name="signup-confirm-password"
+                                                    class="form-control text-box text-warning rounded-1" type="password"
+                                                    placeholder="Confirm Password">
+
+                                            </div>
+                                            <div class="d-flex text-start">
+                                                <button type="submit"
+                                                    class="my-4 btn button btn-outline-warning button">SignUp</button>
+                                            </div>
+
+
+                                        </form>
+                                        <div class="d-flex flex-start w-100 mb-3 gap-4">
+                                            <p class="text-secondary">or login with</p><a
+                                                class="text-decoration-none text-warning" href="#">Facebook</a><a
+                                                class="text-decoration-none text-warning" href="#">Google</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row ">
+            <div class="col-12 p-lg-5 px-5 py-4 col-md-6 ">
+                <p class="h1 ">Learn new concepts for each questions</p>
+                <p
+                    class="my-4 px-1 border border-warning border-5 border-top-0 border-bottom-0 border-end-0 text-secondary">
+                    We help you prepare for exam</p>
+                <p class="my-lg-4 py-lg-4 h5 text-secondary opacity-75">Explore our exciting collection of quizzes on
+                    various topics. Challenge yourself, learn new things, and have a great time with our interactive
+                    quizzes. Whether you're a trivia enthusiast or looking to enhance your knowledge, we've got
+                    something for everyone.</p>
+                <button class="my-lg-5 my-md-3 btn btn-warning text-white rounded-0">Start Solving</button>
+            </div>
+            <div class="col-12 col-md-6 text-center">
+                <img class="img-fluid" src="images/Login_image.svg" alt="">
+            </div>
+
+
+        </div>
+
+
+    </div>
+</body>
+<script src="js/bootstrap.min.js"></script>
+
+</html>
