@@ -1,0 +1,14 @@
+.main-div:hover .hover-text-blue{
+ color:blue;
+}
+.main-div:hover{
+    cursor: pointer;
+}
+.like-lable{
+    transition: 0.1s;
+    cursor: pointer;
+}
+.like-lable:active{
+    scale: 1.2;
+}
+
